@@ -90,7 +90,7 @@ module.exports = alpha = async (alpha, m, chatUpdate, store, antilink, antiwame,
         const tanggal = moment().tz("Asia/Makassar").format("dddd, ll")
         const jam = moment(Date.now()).tz('Asia/Makassar').locale('id').format('HH:mm:ss z')
         const salam = moment(Date.now()).tz("Asia/Makassar").locale('id').format('a')
-        const isCreator = ["62887435047326@s.whatsapp.net", botNumber, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
+        const isCreator = ["6281299609670@s.whatsapp.net", botNumber, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const text = q = args.join(" ")
         const quoted = m.quoted ? m.quoted : m
         const from = m.chat
